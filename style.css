@@ -1,0 +1,215 @@
+/*====== OUTLINE REFERENCE ======*/
+/*===============================*/
+
+/* --- one tab in, like a nested bullet point */
+/* === two tabs in, like a 2nd layer of nested bullets */
+/* :==: three tabs in, like a 3rd layer of nested bullets */
+
+/*====== General CSS ======*/
+/*=========================*/
+
+/* --- body */
+body {
+  background-color: #4BCCA7;
+}
+
+/* --- general font class */
+.font-stuff {
+  font-family: Fugaz One;
+  color: #F7A278;
+  text-shadow: 2px 2px #35393C;
+}
+
+/*====== Title ======*/
+/*===================*/
+#class-title {
+  text-align: center;
+  font-size: 60px;
+}
+
+/* --- dropdown in title */
+.dropdown {
+  text-align: center;
+  position: relative;
+  width: 20%;
+  margin: auto;
+}
+
+/* === dropdown toggle */
+.dropdown-toggle {
+  text-align: center;
+  font-size: 60px;
+  width: 100%;
+  margin: auto;
+}
+
+/* :==: adjust cursor on dropdown-toggle hover */
+.dropdown-toggle:hover {
+  cursor: pointer;
+}
+
+/*====== Dropdown Menu ======*/
+/*===========================*/
+.dropdown-menu {
+  position: absolute;
+  text-align: center;
+  background-color: #333333;
+  font-size: 24px;
+  top: -15%;
+  left: 113%;
+}
+
+/* --- dropdown menu list */
+.dropdown-menu li {
+  border-radius: 2px;
+  color: #F7A278;
+}
+
+/* --- dropdown menu links */
+.dropdown-menu a {
+  font-family: Fugaz One;
+  color: #F7A278 !important;
+  text-shadow: 2px 2px #35393C;
+}
+
+/* === adjusted dropdown menu links on hover*/
+.dropdown-menu a:hover {
+  color: #C8E9A0 !important;
+  text-shadow: 2px 2px #333333;
+  background-color: #333333 !important;
+}
+
+/*====== Grid ======*/
+/*==================*/
+
+/* --- make sure hopper content isn't there on load */
+#hopper {
+  display: none;
+}
+
+/* --- grid container position */
+.container {
+  top: 20%;
+}
+
+/* --- grid row adjustments */
+.row {
+  margin: auto;
+  padding: 20px;
+}
+
+/* --- general center class */
+.center {
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  font-size: 20px;
+  display: none;
+}
+
+/* --- grid images adjustment */
+.grid-img {
+  width: 100%;
+  height: 180px;
+  box-shadow: 2px 2px #35393C;
+  border: 1px solid #C8E9A0;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* === grid images adjustment on hover */
+.grid-img:hover {
+  opacity: 0.5;
+}
+
+/* :==: grid image text adjustment on hover */
+.grid-img:hover ~ .center {
+  display: block;
+}
+
+/*====== Bootstrap Modal ======*/
+/*=============================*/
+
+/* --- content in modal */
+.modal-content {
+  background-color: rgba(0,0,0,0.6);
+  box-shadow: 2px 2px 2px #F7A278;
+}
+
+/* --- adjustments of modal dialog */
+.modal-dialog {
+  width: 90%;
+  display: inline-block;
+  verical-align: middle;
+  height: 40%;
+}
+
+/* --- gen adjustment of whole modal */
+.modal {
+  text-align: center;
+}
+
+/* --- */
+.modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+
+/* --- adjustment of body of modal content */
+.modal-body {
+  background-color: rgba(0,0,0,0.9);
+  box-shadow: 2px 2px 2px #F7A278;
+}
+
+/* --- container of content on left side */
+.content-left {
+  float: left;
+  width: 60%;
+  height: 350px;
+}
+
+/* === quote in left container content */
+.content-left p {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  position: relative;
+  top: 40%;
+}
+
+/* === quote speaker/student name in left container content */
+.content-left h4 {
+  text-align: right;
+  position: relative;
+  top: 65%;
+  right: 10%;
+}
+
+/* --- */
+.content-right {
+
+}
+
+/* --- img in right container */
+.modal-img {
+  position: relative;
+  width: 36%;
+  height: 350px;
+  padding: 10px;
+}
+
+/* --- close button */
+.close {
+  font-size: 32px;
+  color: white;
+  text-align: right;
+  position: relative;
+  right: 1%;
+}
+
+/* === adjustment of close button on hover */
+.close:hover {
+  color: #F7A278;
+}
