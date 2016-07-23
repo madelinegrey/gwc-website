@@ -98,12 +98,19 @@ body {
   padding: 20px;
 }
 
+.grid-text-container {
+  height: 400px;
+  position: relative;
+  top: -400px;
+  margin-bottom: -420px;
+  border: 1px solid transparent;
+}
 /* --- general center class */
 .center {
-  position: absolute;
-  left: 35%;
-  top: 30%;
-  font-size: 20px;
+  position: relative;
+  top: 35%;
+  text-align: center;
+  font-size: 28px;
   display: none;
 }
 
@@ -118,12 +125,12 @@ body {
 }
 
 /* === grid images adjustment on hover */
-.grid-img:hover {
-  opacity: 0.5;
+.grid-text-container:hover {
+  background: rgba(0,0,0,0.7);
 }
 
 /* :==: grid image text adjustment on hover */
-.grid-img:hover ~ .center {
+.grid-text-container:hover > .center {
   display: block;
 }
 
