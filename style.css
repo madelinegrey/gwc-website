@@ -20,6 +20,10 @@ body {
   text-shadow: 2px 2px #35393C;
 }
 
+header {
+  width: 100%;
+}
+
 /*====== Title ======*/
 /*===================*/
 #class-title {
@@ -31,15 +35,14 @@ body {
 .dropdown {
   text-align: center;
   position: relative;
-  width: 20%;
   margin: auto;
+  width: 20%;
 }
 
 /* === dropdown toggle */
 .dropdown-toggle {
   text-align: center;
   font-size: 60px;
-  width: 100%;
   margin: auto;
 }
 
@@ -54,15 +57,23 @@ body {
   position: absolute;
   text-align: center;
   background-color: #333333;
-  font-size: 24px;
-  top: -15%;
-  left: 113%;
+  font-size: 20px;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -100%);
+}
+
+.menu-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
 }
 
 /* --- dropdown menu list */
 .dropdown-menu li {
   border-radius: 2px;
   color: #F7A278;
+  height: 40%;
 }
 
 /* --- dropdown menu links */
@@ -70,6 +81,7 @@ body {
   font-family: Fugaz One;
   color: #F7A278 !important;
   text-shadow: 2px 2px #35393C;
+  height: 100%;
 }
 
 /* === adjusted dropdown menu links on hover*/

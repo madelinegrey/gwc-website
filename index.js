@@ -8,10 +8,11 @@ $(".triangle").click(function() {
   //is made sure that it's not on display
   $(".dropdown-menu").css("display", "none");
   //then the dropdown slides to the left
-  $(".dropdown").animate({left: '-18.5%'});
+  $(".dropdown").animate({left: '-250px'});
   //and makes way for the dropdown menu
   //to fade in *oooo ahhhh*
   $(".dropdown-menu").delay(500).fadeIn('slow');
+  $(".dropdown-menu").css("display", "center");
 });
 
 //kk this just make sure that if you click elsewhere it'll adjust
@@ -34,12 +35,14 @@ $("#hopper-btn").click(function() {
   $(".dropdown-menu").fadeOut("fast");
   //and the dropdown slides back to orig pos
   $(".dropdown").animate({left: '0%'});
+  $(".txt-span").text("Hopper");
 });
 
 //same thing here but vice versa
 $("#lovelace-btn").click(function() {
   $("#hopper").css("display", "none");
   $("#lovelace").css("display", "block");
+  $(".txt-span").text("Lovelace");
   $(".dropdown-menu").fadeOut("slow");
   $(".dropdown").animate({left: '0%'});
 });
