@@ -9,7 +9,7 @@ It features a stylized picture of each student from the two classrooms @NJIT - A
 ## To Do
 
 Yeah, so this isn't exactly finished. I mean, the purpose of making it is fulfilled essentially, but I want to fix and add things that will improve it. So here's what I want to do:
-- [] Change the dropdown area so the cursor will only indicate the possibility to interact with it over the triangle, not the classroom name
-- [] Add a description of GWC and this program either statically under the header or as a replacement for the grid when clicked
-- [] Add a favicon
-- [] Create a small footer
+- [ ] Change the dropdown area so the cursor will only indicate the possibility to interact with it over the triangle, not the classroom name
+- [ ] Add a description of GWC and this program either statically under the header or as a replacement for the grid when clicked
+- [ ] Add a favicon
+- [ ] Create a small footer
