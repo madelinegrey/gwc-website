@@ -151,30 +151,55 @@ header {
 
 /* --- content in modal */
 .modal-content {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0);
   box-shadow: 2px 2px 2px #F7A278;
+  margin: auto;
+  position: relative;
+  left: 0;
+  top: 0;
 }
 
 /* --- adjustments of modal dialog */
 .modal-dialog {
-  width: 90%;
   display: inline-block;
-  verical-align: middle;
-  height: 40%;
+  z-index: 1;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 80%;
 }
 
 /* --- gen adjustment of whole modal */
 .modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid pink;
   text-align: center;
+  overflow-y: auto;
+  background: rgba(0,0,0,0.9);
 }
 
 /* --- */
 .modal:before {
-    display: inline-block;
-    vertical-align: middle;
-    content: " ";
-    height: 100%;
-  }
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100vh;
+}
+
+.modal:after {
+  /*display: inline-block;
+  vertical-align: middle;*/
+  overflow: auto;
+  padding-right: 0px !important;
+}
+
+.modal-open {
+  overflow: auto;
+  padding-right: 0px !important;
+}
 
 /* --- adjustment of body of modal content */
 .modal-body {
@@ -191,19 +216,20 @@ header {
 
 /* === quote in left container content */
 .content-left p {
+  font-size: 20px;
   text-align: center;
-  width: 70%;
+  width: 90%;
   margin: auto;
   position: relative;
-  top: 40%;
+  top: 20%;
 }
 
 /* === quote speaker/student name in left container content */
 .content-left h4 {
   text-align: right;
-  position: relative;
-  top: 65%;
-  right: 10%;
+  position: absolute;
+  width: 60%;
+  top: 80%;
 }
 
 /* --- */
@@ -214,9 +240,10 @@ header {
 /* --- img in right container */
 .modal-img {
   position: relative;
-  width: 36%;
-  height: 350px;
+  max-width: 36%;
+  height: 400px;
   padding: 10px;
+  box-shadow: 1px 1px solid #C8E9A0;
 }
 
 /* --- close button */
@@ -231,4 +258,25 @@ header {
 /* === adjustment of close button on hover */
 .close:hover {
   color: #F7A278;
+}
+
+/* --- arrows */
+.go-left {
+  color: #F7A278;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.go-left:hover, .go-right:hover {
+  text-shadow: 1px 1px 3px #C8E9A0;
+}
+
+.go-right {
+  color: #F7A278;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+a:hover {
+  text-decoration: none;
 }

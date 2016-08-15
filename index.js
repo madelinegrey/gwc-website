@@ -54,3 +54,7 @@ $(".go-to").click(function() {
     }, 500);
     return false;
 });
+
+// modal carousel
+
+
