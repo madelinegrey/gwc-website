@@ -9,8 +9,22 @@
 /*=========================*/
 
 /* --- body */
+*,
+*:before,
+*:after {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   background-color: #4BCCA7;
+  padding-bottom: 6rem;
+  height: 100%;
+  margin: 0;
+  position: relative;
 }
 
 /* --- general font class */
@@ -22,6 +36,17 @@ body {
 
 header {
   width: 100%;
+}
+
+#description {
+  text-align: center;
+  width: 65%;
+  margin: auto;
+  padding-top: 60px;
+}
+
+#description h3 {
+  line-height: 160%;
 }
 
 /*====== Title ======*/
@@ -40,7 +65,7 @@ header {
 }
 
 /* === dropdown toggle */
-.dropdown-toggle {
+#blah {
   text-align: center;
   font-size: 60px;
   margin: auto;
@@ -101,7 +126,8 @@ header {
 
 /* --- grid container position */
 .container {
-  top: 20%;
+  position: absolute;
+  top: 100%;
 }
 
 /* --- grid row adjustments */
@@ -279,4 +305,34 @@ header {
 
 a:hover {
   text-decoration: none;
+}
+
+/* Footer stuff */
+.content {
+  height: auto;
+  min-height: 100%;
+}
+
+.codepen-link, .codepen-link img {
+  width: 20%;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  padding-bottom: 5px;
+  float: right;
+}
+
+.footer span {
+  position: absolute;
+  left: 10px;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 20px;
+  clear: both;
+  position: relative;
+  top: 350%;
 }
